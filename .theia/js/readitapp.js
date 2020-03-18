@@ -28,19 +28,23 @@ http://api.musixmatch.com/ws/1.1/track.search?q_artist=justin bieber&page_size=3
 d3bcfe7a78f2e28470389faa67a5631e
 */
 
-var xhr = new XMLHttpRequest();
 var data;
-
-xhr.open("GET", "https://swapi.co/api/");
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "https://cors-anywhere.herokuapp.com/https://api.musixmatch.com/ws/1.1/track.search?apikey=d3bcfe7a78f2e28470389faa67a5631e&q_artist=justin&page_size=10");
 xhr.send();
+
+function gettracklist(tracklistoutput){
+ tracklist = tracklistoutput;
+}
 
 xhr.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-        data = this.responseText;
+        console.log (this.status);
+        console.log (this.responseText);
+        console.log (JSON.parse(this.responseText));
+        gettracklist (JSON.parse(this.responseText));
     };
-}
-
-console.log(data);
+};
 /*
 
 var defaultClient = MusixmatchApi.ApiClient.instance;
