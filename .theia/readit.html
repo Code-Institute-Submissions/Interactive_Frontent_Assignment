@@ -5,52 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>The Music Hub Website</title>
+
+        <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="./js/readitapp.js"></script>
+    <script src="https://tracking.musixmatch.com/t1.0/AMa6hJCIEzn1v8RuOP"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
+
 </head> 
-    <body>
+<body>           
 <nav class="navbar bg-secondary text-white">
     <a href="./index.html" class="active navbar-item text-white">Home</a>
     <a href="./readit.html" class="navbar-item text-white">Read It!</a>
     <a href="./singit.html" class="navbar-item text-white">Sing It!</a>
     <a href="./watchit.html" class="navbar-item text-white">Watch It!</a>
 </nav>
-        <header>
+<header>
             <h1 class="w100 text-center"><a href="index.html">Search for your Track here</a></h1>
-        </header>
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-                <form action="#">
-                    <p><input type="text" id="search" placeholder="Type an artist or album..." autocomplete="off" class="form-control" /></p>
-                    <button><input type="submit" id="submitsearch" value="Search" class="form-control btn btn-primary w100"></button>
-                    
-                </form>
-                <div id="results"></div>
-            </div>
-        </div>
-        <div>
-        <div class="row">
-            <form id="myForm">
-            <select id="tracklistoutput">
-            <option id="testy">Choose a track</option>
-            </select>
-            </form>
-            </div>
-            <div>
-            <p><input type="submit" id="getlyrics" value="Get Lyrics" class="form-control btn btn-primary w100"></p>
-            </div>
-        </div>
-        <div>
-        <div class="row">
-            <p id="displaylyrics">testylyrics</p>
-        </div>
-        </div>
+</header>
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <form action="#">
+        <p><input type="text" id="search" placeholder="Type an artist or album..." autocomplete="off" class="form-control" /></p>
+        <button type="button" id="submitsearch" value="Search" class="form-control btn btn-primary w100">testy</button>
+        </form>
         
-        <!-- scripts -->
-        <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-        <script src="js/readitapp.js"></script>
-        <script src="https://tracking.musixmatch.com/t1.0/AMa6hJCIEzn1v8RuOP"></script>
-    </body>
+    </div>
+</div>
+<div class="row">
+    <form id="myForm">
+        <select id="tracklistoutput">
+            <option id="testy">Choose a track</option>
+        </select>
+    </form>
+</div>
+<div class="row">
+    <div>
+        <button type="button" id="getlyrics" class="form-control btn btn-primary w100">Get Lyrics</button>
+    </div>
+</div>
+<div class="row">
+    <div id="track_name"></div>
+</div>
+<div class="row">
+    <div id="album_name"></div>
+</div>
+<div class="row">
+    <div id="artist_name"></div>
+</div>
+<div class="row">
+    <pre id="displaylyrics">testylyrics</pre>
+</div>
+</body>
 </html>
