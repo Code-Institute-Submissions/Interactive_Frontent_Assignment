@@ -84,7 +84,7 @@ function getlyrics(trackid){
                 document.getElementById("displaylyrics").innerHTML = lyrics;
             }
             else {
-            document.getElementById("displaylyrics").innerHTML = "No lyrics for this track";
+            document.getElementById("displaylyrics").innerHTML = "Unfortunately no lyrics were found for this track!";
             }
         };
     };

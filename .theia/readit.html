@@ -25,45 +25,71 @@
     <a href="./singit.html" class="navbar-item multicolourtext">Sing It!</a>
     <a href="./watchit.html" class="navbar-item multicolourtext">Watch It!</a>
 </nav>
-
-</div class="container mt-5">
+</div> 
+<div class="container mt-5 charcoaltext">
     <div class="row">
         <div class="mt-5">
-            <h2>Search for the lyrics of your favourite song or watch a music video!</h2>
+            <h2 class="mediumfont">Search for lyrics using the name of an artist or album</h2>
         </div>
     </div>
-<div class="row">
-    <div class="col-md-6 col-md-offset-3">
-        <form action="#">
-        <p><input type="text" id="search" placeholder="Type an artist or album..." autocomplete="off" class="form-control" /></p>
-        <button type="button" id="submitsearch" value="Search" class="form-control btn btn-primary w100">testy</button>
-        </form>
-        
+    <div class="row mt-5">
+            <div class="col-sm-4">
+                <p><input type="text" id="search" placeholder="Type an artist or album..." autocomplete="off" class="readitpagebuttons"/></p>
+            </div>
+            <div class="col-sm-3">
+                <button type="button" id="submitsearch" class="readitpagebuttonssmall homepagebutton2" value="Search">Search</button>
+            </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-sm-4">
+            <select id="tracklistoutput">
+                <option class="readitpagebuttons">Select a Track</option>
+            </select>   
+        </div>
+        <div class="col-sm-4">
+            <button type="button" id="getlyrics" class="readitpagebuttonssmall homepagebutton2">Get Lyrics</button>
+        </div>
     </div>
 </div>
-<div class="row">
-    <form id="myForm">
-        <select id="tracklistoutput">
-            <option id="testy">Choose a track</option>
-        </select>
-    </form>
-</div>
-<div class="row">
-    <div>
-        <button type="button" id="getlyrics" class="form-control btn btn-primary w100">Get Lyrics</button>
+<div class="container mt-5 readitresultsbg charcoaltext">
+    <div class="row">
+        <h2 class="charcoaltext mediumfont">Track information and Lyrics:</h2>
+    </div>
+    <div class="row mt-5">
+        <p class="readitpagebuttonslist">Track Name:</p>
+        <div id="track_name" class="readitresults"></div>
+    </div>
+    <div class="row">
+        <p class="readitpagebuttonslist">Album:</p>
+        <div id="album_name" class="readitresults"></div>
+    </div>
+    <div class="row">
+        <p class="readitpagebuttonslist">Artist:</p>
+        <div id="artist_name" class="readitresults"></div>
+    </div>
+    <div class="container mt-3 lyricsresults">
+        <div class="row">
+               <p class="readitpagebuttonslyrics">Lyrics:</p>
+        </div>
+        <div class="row">
+                <pre id="displaylyrics">Lyrics will be displayed here...</pre>
+        </div>
     </div>
 </div>
-<div class="row">
-    <div id="track_name"></div>
-</div>
-<div class="row">
-    <div id="album_name"></div>
-</div>
-<div class="row">
-    <div id="artist_name"></div>
-</div>
-<div class="row">
-    <pre id="displaylyrics">testylyrics</pre>
-</div>
+
 </body>
+<section>
+    <div mt-5>
+        <footer class="container-fluid mt-5 bg-secondary text-white pt-4">
+            <div class="row text-center">
+                <div class="col-6">
+                    <a href="./index.html" class="text-white fa fa-home mb-3"><h2>Home</h2></a>
+                </div>
+                <div class="col-6">
+                    <a href="./contact.html" class="text-white fa fa-comment-o"><h2>Contact Us</h2></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</section>
 </html>

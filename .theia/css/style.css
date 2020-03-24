@@ -1,24 +1,22 @@
 div {font-family: "Bubblegum Sans";}
 h2 {font-family: "Bubblegum Sans";}
-body { background: #FFB6C1;
-  z-index:1;
-  -moz-animation:move-twink-back 200s linear infinite;
-  -ms-animation:move-twink-back 200s linear infinite;
-  -o-animation:move-twink-back 200s linear infinite;
-  -webkit-animation:move-twink-back 200s linear infinite;
-  animation:move-twink-back 200s linear infinite;
-  }
-.navbar { background: #FFFFFF;
-border-radius: 12px;
-font-size: 40px;
-font-weight: "bold";
-padding: 15px;
-}
-form { margin-top: 20px; }
-form { padding: 0 20px; }
-pre {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 40px;
+
+body { 
+    background: #FFB6C1;
+    z-index:1;
+    -moz-animation:move-twink-back 200s linear infinite;
+    -ms-animation:move-twink-back 200s linear infinite;
+    -o-animation:move-twink-back 200s linear infinite;
+    -webkit-animation:move-twink-back 200s linear infinite;
+    animation:move-twink-back 200s linear infinite;
+    }
+
+.navbar {
+    background: #FFFFFF;
+    border-radius: 12px;
+    font-size: 40px;
+    font-weight: "bold";
+    padding: 15px;
 }
 
 #titlebackground {
@@ -55,18 +53,25 @@ pre {
     width: 500px;
     height: 200px;
 }
-.textcolour{
-    font-size: 50px;
+.charcoaltext{
     color: #36454f;
 }
 
+.largefont{
+font-size: 50px;
+}
+
+.mediumfont{
+font-size: 40px;
+}
+
 .homepagebuttons:hover {
-  background-color: #4CAF50; /* Green */
-  color: rgb(64, 29, 221);
-  -moz-animation: blink normal 2s infinite ease-in-out; /* Firefox */
-  -webkit-animation: blink normal 2s infinite ease-in-out; /* Webkit */
-  -ms-animation: blink normal 2s infinite ease-in-out; /* IE */
-  animation: blink normal 2s infinite ease-in-out; 
+    background-color: #4CAF50; /* Green */
+    color: rgb(64, 29, 221);
+    -moz-animation: blink normal 2s infinite ease-in-out; /* Firefox */
+    -webkit-animation: blink normal 2s infinite ease-in-out; /* Webkit */
+    -ms-animation: blink normal 2s infinite ease-in-out; /* IE */
+    animation: blink normal 2s infinite ease-in-out; 
 }
 .homepagebutton1 {
     background: url("../images/dots4.png");
@@ -119,9 +124,86 @@ pre {
 }
 
 .multicolourtext {
-background-image: linear-gradient(to left, violet, indigo);  
--webkit-background-clip: text;
--moz-background-clip: text; 
-background-clip: text;
-color: transparent;
+    background-image: linear-gradient(to left, violet, indigo);  
+    -webkit-background-clip: text;
+    -moz-background-clip: text; 
+    background-clip: text;
+    color: transparent;
+}
+
+.readitpagebuttons {
+    font-size: 25px;
+    color: #36454f;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    border: 2px solid #4CAF50;
+    padding: 5px;
+    width: 300px;
+    height: 50px;
+}
+.readitpagebuttonssmall {
+    font-size: 25px;
+    color: #36454f;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    border: 2px solid #4CAF50;
+    padding: 5px;
+    width: 150px;
+    height: 50px;
+}
+.readitpagebuttonslist {
+    font-size: 25px;
+    color: #36454f;
+    background-color: #FFe6e6;
+    border-radius: 12px;
+    padding: 5px;
+    width: 400px;
+    height: 50px;
+}
+.readitpagebuttonslyrics {
+    font-size: 25px;
+    color: #36454f;
+    background-color: #ffcccc;
+    border-radius: 12px;
+    padding: 10px;
+    width: 400px;
+    height: 50px;
+}
+
+select {
+    width: 300px;
+    height: 50px;
+    font-size:24px;
+    border-radius: 12px;
+    }
+
+select option {
+    font-weight:normal;
+    background-color:#FFFFFF;
+    font-family: "Bubblegum Sans";
+}
+
+.readitresultsbg {
+    background: #FFe6e6;
+    padding: 50px;
+    border-radius: 12px;
+    }
+
+.readitresults {
+    font-size: 25px;  
+    word-wrap: "break-word";
+    width: 600px;
+    padding: 15px;
+}
+
+pre {
+  font-family: "Bubblegum Sans";
+  font-size: 25px !important;
+  padding: 25px;
+}
+
+.lyricsresults {
+    background-color:#ffcccc;
+    padding: 50px;
+    border-radius: 12px;
 }
