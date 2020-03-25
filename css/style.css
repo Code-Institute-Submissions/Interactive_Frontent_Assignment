@@ -134,7 +134,7 @@ a, a:hover, a:focus, a:active {
     border-radius: 12px;
     border: 2px solid #d60da4;
     padding: 5px;
-    width: 300px;
+    width: 100%;
     height: 50px;
 }
 .readitpagebuttonssmall {
@@ -158,7 +158,7 @@ a, a:hover, a:focus, a:active {
     background-color: #FFe6e6;
     border-radius: 12px;
     padding: 5px;
-    width: 400px;
+    width: 100%;
     height: 50px;
 }
 .readitpagebuttonslyrics {
@@ -200,16 +200,27 @@ select option {
 pre {
     font-family: "Bubblegum Sans";
     font-size: 25px !important;
-    padding: 25px;
-    word-wrap: "break-word" !important;
+    padding: 10px;
     width: 100%;
     height: 100%;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
 }
 
 .lyricsresults {
     background-color:#ffcccc;
     padding: 50px;
     border-radius: 12px;
+}
+
+.displaylyricsoutput {
+    word-wrap: "break-word" !important;
+    width: calc(100vw - 20px);
+    height: 100%;
 }
 
 #results {
