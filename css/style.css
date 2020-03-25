@@ -51,7 +51,7 @@ body {
     border: 2px solid #d60da4;
     padding: 40px;
     width: 100%;
-    height: 150px;
+    height: 100%;
 }
 .charcoaltext{
     color: #36454f;
@@ -167,8 +167,8 @@ a, a:hover, a:focus, a:active {
     background-color: #ffcccc;
     border-radius: 12px;
     padding: 10px;
-    width: 400px;
-    height: 50px;
+    width: 100%;
+    height: 100%;
 }
 
 select {
@@ -193,14 +193,17 @@ select option {
 .readitresults {
     font-size: 25px;  
     word-wrap: "break-word";
-    width: 600px;
+    width: 100%;
     padding: 15px;
 }
 
 pre {
-  font-family: "Bubblegum Sans";
-  font-size: 25px !important;
-  padding: 25px;
+    font-family: "Bubblegum Sans";
+    font-size: 25px !important;
+    padding: 25px;
+    word-wrap: "break-word" !important;
+    width: 100%;
+    height: 100%;
 }
 
 .lyricsresults {
@@ -211,5 +214,4 @@ pre {
 
 #results {
     font-size: 25px;
-    margin: "auto";
 }
