@@ -11,18 +11,12 @@ $( document ).ready(function() {
     console.log(xhr.status);
     console.log(xhr.statusText);
     xhr.onreadystatechange = function() {     
-        console.log("in the function");
-        console.log(xhr.status);
-        console.log(xhr.statusText);
         if (this.readyState == 4 && this.status == 200 && this.responseText !== null) {
-            console.log(this.responseText);
             let x = (JSON.parse(this.responseText));
             callback(x);
             }
         };
-    //xhr.open("GET", "https://cors-anywhere.herokuapp.com/https://api.musixmatch.com/ws/1.1/track.search?apikey=d3bcfe7a78f2e28470389faa67a5631e&q_artist=justin&page_size=10",true);
-    xhr.open("GET", searchURL, true);
-    
+    xhr.open("GET", searchURL, true); 
     xhr.send();
     };
 
@@ -30,7 +24,6 @@ $("#submitsearch").click(function outputtracklisttohtml() {
     console.log("testyonw");
     //event.preventDefault();
             gettracklist(function(data) {
-            
             console.log("received data");
             console.log(data);
             console.log("testy");
@@ -42,13 +35,16 @@ $("#submitsearch").click(function outputtracklisttohtml() {
     console.log(tracklist.length);
     for(var i = 0; i < tracklist.length; i++) {
         var opt = tracklist[i];
-        console.log("opt")
-        console.log(opt);
         if (opt.track.has_lyrics == 1) {
             var el = document.createElement("option");
-            el.text = opt.track.track_name;
-            el.value = opt.track.track_name;
-            el.innerHTML = opt.track.track_name;
+            var trname = opt.track.track_name;
+            var trid = opt.track.track_id;
+            var artist = opt.track.artist_name;
+            var album = opt.track.album_name;
+            var trackinfo = trname + "     >" + artist + "    >" + album + "    >" + trid;
+            el.text = trackinfo;
+            el.value = trackinfo;
+            el.innerHTML = trackinfo;
             console.log("el intter html");
             console.log(el.innerHTML);
             select.appendChild(el);
@@ -64,11 +60,21 @@ $("#submitsearch").click(function outputtracklisttohtml() {
     console.dir(tracklist)
 };*/
 
-function getlyrics(trackid){
-    console.log("trackid in getlyrics function");
-    console.log(trackid);
+function getlyrics(){
+    //console.log("trackid in getlyrics function");
+    //console.log(trackid);
+    var newtrackid = document.getElementById("tracklistoutput").value;
+    console.log("newtrackid");
+    console.log(newtrackid);
+    track_name = newtrackid.split('>')[0];
+    artist_name = newtrackid.split('>')[1];
+    album_name = newtrackid.split('>')[2];
+    track_id = newtrackid.split('>')[3];
+    document.getElementById("track_name").innerHTML = track_name;
+    document.getElementById("album_name").innerHTML = album_name;
+    document.getElementById("artist_name").innerHTML = artist_name;
     var xhr = new XMLHttpRequest();
-    var URL = "https://cors-anywhere.herokuapp.com/https://api.musixmatch.com/ws/1.1/track.lyrics.get?apikey=d3bcfe7a78f2e28470389faa67a5631e&track_id=" + trackid;
+    var URL = "https://cors-anywhere.herokuapp.com/https://api.musixmatch.com/ws/1.1/track.lyrics.get?apikey=d3bcfe7a78f2e28470389faa67a5631e&track_id=" + track_id;
     console.log("URL");
     console.log(URL);    
     xhr.open("GET", URL);
@@ -89,7 +95,7 @@ function getlyrics(trackid){
         };
     };
 };
-
+/*
 function gettrackid(tracklist){
     //tracklist.preventDefault();
     tracklist = tracklist.message.body.track_list
@@ -102,9 +108,7 @@ function gettrackid(tracklist){
     console.log(trackid);
     getlyrics(trackid);
 };
-$("#getlyrics").click(function(){
-    (gettracklist(gettrackid));
-});
-//$("#getlyrics").click(gettracklist(gettrackid));
+*/
+$("#getlyrics").click(getlyrics);
 });
 
