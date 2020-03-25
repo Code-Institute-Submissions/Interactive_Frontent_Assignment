@@ -36,16 +36,12 @@ $( document ).ready(function() {
                 resultsoutput.appendChild(titleelement);
                 resultsoutput.appendChild(br1);
                 resultsoutput.appendChild(br2);
-                //resultsoutput.appendChild(br);
                 var iframeelement = document.createElement('iframe');
                 iframeelement.setAttribute("width","100%");
                 iframeelement.setAttribute("height","100%");
                 iframeelement.setAttribute("position","absolute");
-                //iframeelement.setAttribute("frameborder","0");
                 var iframesrc = "//www.youtube.com/embed/" + videoid;
                 iframeelement.src = iframesrc;
-                //iframeelement.width = 600;
-                //iframeelement.height = 300;
                 resultsoutput.appendChild(iframeelement);
                 resultsoutput.appendChild(br3);
                 resultsoutput.appendChild(br4);
