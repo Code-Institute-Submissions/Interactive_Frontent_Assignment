@@ -37,25 +37,27 @@
             </div>
     </div>
     <div class="row mt-5">
-        <div class="col-sm-4">
+        <div class="col-sm-3">
             <select id="tracklistoutput">
                 <option class="readitpagebuttons">Select a Track</option>
             </select> 
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-3">
             <button type="button" id="getlyrics" class="readitpagebuttonssmall">Get Lyrics</button>
         </div>
     </div>
 </div>
 <div class="container mt-5 readitresultsbg charcoaltext">
     <div class="row">
-        <h2 class="charcoaltext mediumfont">Track information and Lyrics:</h2>
+        <div class="col-sm-6">
+            <h2 class="charcoaltext mediumfont">Track information and Lyrics:</h2>
+        </div>
     </div>
     <div class="row mt-5">
         <div class="col-sm-3">
             <p class="readitpagebuttonslist">Track Name:</p>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-3">
             <div id="track_name" class="readitresults"></div>
         </div>
     </div>
@@ -63,7 +65,7 @@
         <div class="col-sm-3">
             <p class="readitpagebuttonslist">Album:</p>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-3">
             <div id="album_name" class="readitresults"></div>
         </div>
     </div>
@@ -71,16 +73,20 @@
         <div class="col-sm-3">
             <p class="readitpagebuttonslist">Artist:</p>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-3">
             <div id="artist_name" class="readitresults"></div>
         </div>
     </div>
     <div class="container mt-3 lyricsresults">
         <div class="row">
+            <div class="col-sm-3">
                <p class="readitpagebuttonslyrics">Lyrics:</p>
+            </div>
         </div>
         <div class="row">
+            <div class="col-sm-3">
                 <pre id="displaylyrics">Lyrics will be displayed here...</pre>
+            </div>
         </div>
     </div>
 </div>
