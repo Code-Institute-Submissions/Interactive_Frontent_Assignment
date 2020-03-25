@@ -22,7 +22,7 @@
     <a href="./watchit.html" class="multicolourtext">Watch Videos!</a>
 </nav>
 </div> 
-<div class="container mt-5 charcoaltext">
+<div class="container mt-5 readitresultsbg charcoaltext">
     <div class="row">
         <div class="mt-5">
             <h2 class="mediumfont">Search for lyrics using the name of an artist or album</h2>
@@ -33,17 +33,17 @@
                 <p><input type="text" id="search" placeholder="Type an artist or album..." autocomplete="off" class="readitpagebuttons"/></p>
             </div>
             <div class="col-sm-3">
-                <button type="button" id="submitsearch" class="readitpagebuttonssmall homepagebutton2" value="Search">Search</button>
+                <button type="button" id="submitsearch" class="readitpagebuttonssmall" value="Search">Search</button>
             </div>
     </div>
     <div class="row mt-5">
         <div class="col-sm-4">
             <select id="tracklistoutput">
                 <option class="readitpagebuttons">Select a Track</option>
-            </select>   
+            </select> 
         </div>
         <div class="col-sm-4">
-            <button type="button" id="getlyrics" class="readitpagebuttonssmall homepagebutton2">Get Lyrics</button>
+            <button type="button" id="getlyrics" class="readitpagebuttonssmall">Get Lyrics</button>
         </div>
     </div>
 </div>
@@ -52,16 +52,28 @@
         <h2 class="charcoaltext mediumfont">Track information and Lyrics:</h2>
     </div>
     <div class="row mt-5">
-        <p class="readitpagebuttonslist">Track Name:</p>
-        <div id="track_name" class="readitresults"></div>
+        <div class="col-sm-3">
+            <p class="readitpagebuttonslist">Track Name:</p>
+        </div>
+        <div class="col-sm-6">
+            <div id="track_name" class="readitresults"></div>
+        </div>
     </div>
     <div class="row">
-        <p class="readitpagebuttonslist">Album:</p>
-        <div id="album_name" class="readitresults"></div>
+        <div class="col-sm-3">
+            <p class="readitpagebuttonslist">Album:</p>
+        </div>
+        <div class="col-sm-6">
+            <div id="album_name" class="readitresults"></div>
+        </div>
     </div>
     <div class="row">
-        <p class="readitpagebuttonslist">Artist:</p>
-        <div id="artist_name" class="readitresults"></div>
+        <div class="col-sm-3">
+            <p class="readitpagebuttonslist">Artist:</p>
+        </div>
+        <div class="col-sm-6">
+            <div id="artist_name" class="readitresults"></div>
+        </div>
     </div>
     <div class="container mt-3 lyricsresults">
         <div class="row">

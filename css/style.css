@@ -46,19 +46,19 @@ body {
 .homepagebuttons {
     font-size: 45px;
     color: #36454f;
-    background-color: #FFFFFF;
+    background-color: #fdecf9;
     border-radius: 12px;
-    border: 2px solid #4CAF50;
-    padding: 50px;
+    border: 2px solid #d60da4;
+    padding: 40px;
     width: 550px;
-    height: 200px;
+    height: 150px;
 }
 .charcoaltext{
     color: #36454f;
 }
 
 .largefont{
-font-size: 50px;
+font-size: 60px;
 }
 
 .mediumfont{
@@ -68,7 +68,7 @@ font-size: 40px;
 .homepagebuttons:hover {
     color: #660066;
     transition-duration: 0.4s;
-    font-size: 55px;
+    font-size: 50px;
 }
 
 .navbar:hover {
@@ -85,23 +85,6 @@ a, a:hover, a:focus, a:active {
     background-clip: text;
     color: transparent;
 }
-
-.homepagebutton1 {
-    background: url("../images/dots4.png");
-    transition-duration: 0.4s;
-    -webkit-background-size: cover;
-    -moz-background-size: 100% 100%;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.homepagebutton2 {
-    background: url("../images/stripes.png");
-    transition-duration: 0.4s;
-    -webkit-background-size: cover;
-    -moz-background-size: 100% 100%;
-    -o-background-size: cover;
-    background-size: cover;
 }
 
 .twinkling{
@@ -149,7 +132,7 @@ a, a:hover, a:focus, a:active {
     color: #36454f;
     background-color: #FFFFFF;
     border-radius: 12px;
-    border: 2px solid #4CAF50;
+    border: 2px solid #d60da4;
     padding: 5px;
     width: 300px;
     height: 50px;
@@ -157,9 +140,9 @@ a, a:hover, a:focus, a:active {
 .readitpagebuttonssmall {
     font-size: 25px;
     color: #36454f;
-    background-color: #FFFFFF;
+    background-color: #fdecf9;
     border-radius: 12px;
-    border: 2px solid #4CAF50;
+    border: 2px solid #d60da4;
     padding: 5px;
     width: 150px;
     height: 50px;
@@ -227,5 +210,6 @@ pre {
 }
 
 #results {
-    font-size: 25px
+    font-size: 25px;
+    margin: "auto";
 }
