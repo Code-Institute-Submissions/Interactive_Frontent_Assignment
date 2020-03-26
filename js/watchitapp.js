@@ -41,8 +41,8 @@ $( document ).ready(function() {
                 resultsoutput.appendChild(br2);
 
                 //Specific iframe attributes are required to facilitate the responsiveness of the element in the html page
-                iframeelement.setAttribute("width","100%");
-                iframeelement.setAttribute("height","100%");
+                iframeelement.setAttribute("width","75%");
+                iframeelement.setAttribute("height","250px");
                 iframeelement.setAttribute("position","absolute");
 
                 //The iframe source is configured to include the youtube path and the videoid returned in the api response
