@@ -12,98 +12,97 @@
     <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body class="stars">
-<div>           
-<nav class="navbar">
-    <a href="./index.html" class="multicolourtext">Home</a>
-    <a href="./readit.html" class="multicolourtext">Get Lyrics!</a>
-    <a href="./watchit.html" class="multicolourtext">Watch Videos!</a>
-</nav>
-</div>
-<div class="container mt-5 readitresultsbg charcoaltext">
-    <div class="row">
-        <div class="mt-5">
-            <h2 class="mediumfont">Search for lyrics using the name of an artist or album</h2>
-        </div>
+    <div>           
+        <nav class="navbar">
+            <a href="./index.html" class="multicolourtext">Home</a>
+            <a href="./readit.html" class="multicolourtext">Get Lyrics!</a>
+            <a href="./watchit.html" class="multicolourtext">Watch Videos!</a>
+        </nav>
     </div>
-    <div class="row mt-5">
+    <div class="container mt-5 readitresultsbg charcoaltext">
+        <div class="row">
+            <div class="mt-5">
+                <h2 class="mediumfont">Search for lyrics using the name of an artist or album</h2>
+            </div>
+        </div>
+        <div class="row mt-5">
             <div class="col-sm-4">
                 <p><input type="text" id="search" placeholder="Type an artist or album..." autocomplete="off" class="readitpagebuttons"/></p>
             </div>
             <div class="col-sm-3">
                 <button type="button" id="submitsearch" class="readitpagebuttonssmall" value="Search">Search</button>
             </div>
-    </div>
-    <div class="row mt-5">
-        <div class="col-sm-4">
-            <select id="tracklistoutput">
-                <option class="readitpagebuttons">Select a Track</option>
-            </select> 
         </div>
-        <div class="col-sm-3">
-            <button type="button" id="getlyrics" class="readitpagebuttonssmall">Get Lyrics</button>
-        </div>
-    </div>
-</div>
-<div class="container mt-5 readitresultsbg charcoaltext">
-    <div class="row">
-        <div class="col-sm-6">
-            <h2 class="charcoaltext mediumfont">Track information and Lyrics:</h2>
+        <div class="row mt-5">
+            <div class="col-sm-4">
+                <select id="tracklistoutput">
+                    <option class="readitpagebuttons">Select a Track</option>
+                </select> 
+            </div>
+            <div class="col-sm-3">
+                <button type="button" id="getlyrics" class="readitpagebuttonssmall">Get Lyrics</button>
+            </div>
         </div>
     </div>
-    <div class="row mt-5">
-        <div class="col-sm-3">
-            <p class="readitpagebuttonslist">Track Name:</p>
+    <div class="container mt-5 readitresultsbg charcoaltext">
+        <div class="row">
+            <div class="col-sm-6">
+                <h2 class="charcoaltext mediumfont">Track information and Lyrics:</h2>
+            </div>
         </div>
-        <div class="col-sm-6">
-            <div id="track_name" class="readitresults"></div>
+        <div class="row mt-5">
+            <div class="col-sm-3">
+                <p class="readitpagebuttonslist">Track Name:</p>
+            </div>
+            <div class="col-sm-6">
+                <div id="track_name" class="readitresults"></div>
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-3">
-            <p class="readitpagebuttonslist">Album:</p>
-        </div>
-        <div class="col-sm-6">
-            <div id="album_name" class="readitresults"></div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-3">
-            <p class="readitpagebuttonslist">Artist:</p>
-        </div>
-        <div class="col-sm-6">
-            <div id="artist_name" class="readitresults"></div>
-        </div>
-    </div>
-    <div class="container mt-3 lyricsresults">
         <div class="row">
             <div class="col-sm-3">
-               <p class="readitpagebuttonslyrics">Lyrics:</p>
+                <p class="readitpagebuttonslist">Album:</p>
+            </div>
+            <div class="col-sm-6">
+                <div id="album_name" class="readitresults"></div>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-9 displaylyricsoutput">
-                <pre id="displaylyrics">Lyrics will be displayed here...</pre>
+            <div class="col-sm-3">
+                <p class="readitpagebuttonslist">Artist:</p>
+            </div>
+            <div class="col-sm-6">
+                <div id="artist_name" class="readitresults"></div>
+            </div>
+        </div>
+        <div class="container mt-3 lyricsresults">
+            <div class="row">
+                <div class="col-sm-3">
+                    <p class="readitpagebuttonslyrics">Lyrics:</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-9 displaylyricsoutput">
+                    <pre id="displaylyrics">Lyrics will be displayed here...</pre>
+                </div>
             </div>
         </div>
     </div>
-</div>
-</body>
-<section>
-    <div mt-5>
-        <footer class="container-fluid mt-5 bg-secondary text-white pt-4">
-            <div class="row text-center">
-                <div class="col-6">
-                    <a href="./index.html" class="text-white fa fa-home mb-3"><h2>Home</h2></a>
+    <section>
+        <div>
+            <footer class="container-fluid mt-5 bg-secondary text-white pt-4">
+                <div class="row text-center">
+                    <div class="col-6">
+                        <a href="./index.html" class="text-white fa fa-home mb-3"><h2>Home</h2></a>
+                    </div>
+                    <div class="col-6">
+                        <a href="./contact.html" class="text-white fa fa-comment-o"><h2>Contact</h2></a>
+                    </div>
                 </div>
-                <div class="col-6">
-                    <a href="./contact.html" class="text-white fa fa-comment-o"><h2>Contact</h2></a>
-                </div>
-            </div>
-        </footer>
-    </div>
-</section>
-<!-- scripts -->
+            </footer>
+        </div>
+    </section>
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
     <script src="./js/readitapp.js"></script>
     <script src="https://tracking.musixmatch.com/t1.0/AMa6hJCIEzn1v8RuOP"></script>
+</body>
 </html>
