@@ -144,7 +144,7 @@ a, a:hover, a:focus, a:active {
     border-radius: 12px;
     border: 2px solid #d60da4;
     padding: 5px;
-    width: 150px;
+    width: 100%;
     height: 50px;
 }
 .readitpagebuttonssmall:hover {
@@ -172,7 +172,7 @@ a, a:hover, a:focus, a:active {
 }
 
 select {
-    width: 300px;
+    width: 100%;
     height: 50px;
     font-size:24px;
     border-radius: 12px;
@@ -201,14 +201,12 @@ pre {
     font-family: "Bubblegum Sans";
     font-size: 25px !important;
     padding: 10px;
-    width: 100%;
-    height: 100%;
     overflow-x: auto;
-    white-space: pre-wrap;
-    white-space: -moz-pre-wrap;
-    white-space: -pre-wrap;
-    white-space: -o-pre-wrap;
-    word-wrap: break-word;
+    white-space: pre-wrap !important;
+    white-space: -moz-pre-wrap !important;
+    white-space: -pre-wrap !important;
+    white-space: -o-pre-wrap !important;
+    word-wrap: break-word !important;
 }
 
 .lyricsresults {
@@ -225,4 +223,8 @@ pre {
 
 #results {
     font-size: 25px;
+}
+
+.textpadding {
+    padding: 10px;
 }
