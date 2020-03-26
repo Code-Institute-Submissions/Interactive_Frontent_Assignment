@@ -7,11 +7,11 @@ $( document ).ready(function() {
         var xhr = new XMLHttpRequest();
         xhr.onreadystatechange = function() {     
         if (this.readyState == 4 && this.status == 200 && this.responseText !== null) {
-            let x = (JSON.parse(this.responseText));
+           var x = (JSON.parse(this.responseText));
            for (var i = 0; i < x.items.length; i++) {
                 var item = x.items[i];
-                videotitle = item.snippet.title;
-                videoid = item.id.videoId;
+                var videotitle = item.snippet.title;
+                var videoid = item.id.videoId;
                 var resultsoutput = document.getElementById("results");
                 var titleelement = document.createElement('titleelement');
                 var br1 = document.createElement('br');

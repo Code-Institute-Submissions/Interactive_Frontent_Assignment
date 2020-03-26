@@ -15,7 +15,6 @@ body {
     background: #FFFFFF;
     border-radius: 12px;
     font-size: 40px;
-    font-weight: "bold";
     padding: 15px;
 }
 
@@ -85,9 +84,7 @@ a, a:hover, a:focus, a:active {
     background-image: linear-gradient(to left, violet, indigo);  
     -webkit-background-clip: text;
     -moz-background-clip: text; 
-    background-clip: text;
     color: transparent;
-}
 }
 
 .twinkling{
@@ -126,7 +123,6 @@ a, a:hover, a:focus, a:active {
     background-image: linear-gradient(to left, rgb(160, 10, 160), #ec1a8a);  
     -webkit-background-clip: text;
     -moz-background-clip: text; 
-    background-clip: text;
     color: transparent;
 }
 
@@ -194,8 +190,7 @@ select option {
     }
 
 .readitresults {
-    font-size: 25px;  
-    word-wrap: "break-word";
+    font-size: 25px;
     width: 100%;
     padding: 15px;
 }
@@ -219,7 +214,6 @@ pre {
 }
 
 .displaylyricsoutput {
-    word-wrap: "break-word" !important;
     width: calc(100vw - 20px);
     height: 100%;
 }
