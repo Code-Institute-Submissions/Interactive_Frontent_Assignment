@@ -19,6 +19,9 @@
             <a href="./watchit.html" class="multicolourtext">Watch Videos!</a>
         </nav>
     </div>
+
+    <!-- This section contains the text instructions for the user, and the input field for the video search -->
+
     <div class="container mt-5 readitresultsbg charcoaltext">
         <div class="row">
             <div class="mt-5">
@@ -30,18 +33,24 @@
             <div class="col-sm-4">
                 <p><input type="text" placeholder="Type an artist or album..." autocomplete="off" class="readitpagebuttons" id="searchcriteria"></p>
             </div>
-                <div class="col-sm-3">
-                    <p><input type="button" id="search" value="Search" class="readitpagebuttonssmall"></p>
-                </div>
+            <div class="col-sm-3">
+                <p><input type="button" id="search" value="Search" class="readitpagebuttonssmall"></p>
             </div>
-                <div class="container mt-3 lyricsresults" style="padding-bottom:56.25%; position:relative; display:block; width: 100%">
-                    <div class="row">
-                        <div class="col mx-auto">
-                            <div id="results"></div>
-                        </div>
+        </div>
+
+        <!-- The search output is populated into the element with the id of results -->
+
+            <div class="container mt-3 lyricsresults" style="position:relative; display:block; width: 100%">
+                <div class="row">
+                    <div class="col mx-auto">
+                        <div id="results"></div>
                     </div>
                 </div>
-            </div>       
+            </div>
+        </div>
+    
+    <!-- Footer section -->
+
     <section>
         <div>
             <footer class="container-fluid mt-5 bg-secondary text-white pt-4">
